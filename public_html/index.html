@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>First Hrml</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                width: 100px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="mystyle.css"/>
+
+        <script type="text/javascript">
+            var myName = 10;
+            myName = "Hello";
+            myName = 10.23;
+
+            function getMyName() {
+                return myName;
+            }
+            
+            function Car(){
+                
+                function getCarName(){
+                    
+                }
+                
+                function getCarOwner() {
+                    
+                }
+            }
+            
+            function clickIt(){
+                //alert("Hello");
+                
+                var newButton = document.createElement("input");
+                newButton.type = "button";
+                
+                var divThird = document.getElementById("divThird");
+                divThird.appendChild(newButton);
+            }
+            
+            function addUnorderedItem(){
+                
+                var textItem = document.getElementById("textItem").value;
+                
+                var unorderedItems = document.getElementById("unorderedItems");
+                var li = document.createElement("li");
+                li.innerHTML = "<h1>" +textItem +"</h1>";
+                unorderedItems.appendChild(li);
+            }
+        </script>
+        <script src="myscript.js" type="text/javascript"></script>
+            
+    </head>
+    <body onload="fewBasicClasses()">
+        <div><u style="width: 300px;height: 200px;">TODO write content</u></div>
+        <p>
+            <input type="button" value="Okay" onclick="addUnorderedItem();">
+        <p id="currentDate">Current Date is - </p>
+            
+        </p>
+
+        <div >
+            <label> Hello World</label>
+        </div>
+        <div id="divThird">
+            <input type="text" id="textItem"/>
+        </div>
+        <div class="myFirstClass">
+            <ul id="unorderedItems">
+                <li><h1>Android</h1></li>
+                <li><h2>Apple</h2></li>
+                <li><h3>Black Berry</h3></li>
+                <li><h4>Windows</h4></li>
+            </ul>
+        </div>
+    </body>
+</html>
